@@ -1,0 +1,19 @@
+.inventory-container {
+  margin: 30px auto;
+  width: 95%;
+  max-width: 1900px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 5px 5px 15px 5px #888888;
+  background-color: #e4e2e29c;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #c4c2c291;
+  margin: 20px 0;
+}
+.mobile-only {
+  display: none;
+}
