@@ -11,6 +11,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.no-scroll {
+  overflow: hidden !important;
+}
+
 :root {
   --primary-red: #dc1717;
   --gold: #ffc107;

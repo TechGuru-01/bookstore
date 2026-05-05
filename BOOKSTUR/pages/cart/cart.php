@@ -1,9 +1,10 @@
-<?php 
+<?php
 require_once '../../include/config.php';
 require_once '../../include/auth_checker.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,20 +17,22 @@ require_once '../../include/auth_checker.php';
     <link rel="stylesheet" href="../../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body>
 
-    <?php include '../../component/navbar/navbar.php'?>
+    <?php include '../../component/navbar/navbar.php' ?>
 
     <main class="hero-section">
         <div class="hero-overlay" style="background-image: url('../../src/SSCRLogo1.png');"></div>
         <div class="bg-text bg-text-top">Caritas et Scientia</div>
         <div class="bg-text bg-text-bottom">SSCRdC</div>
-        
+
         <div class="cart-box">
             <h1>Your Shopping Cart</h1>
-            
+
             <div class="table-container">
                 <table class="cart-table">
                     <thead>
@@ -60,7 +63,7 @@ require_once '../../include/auth_checker.php';
         </div>
     </main>
 
-    <?php include '../../component/footer/footer.php'?>
+    <?php include '../../component/footer/footer.php' ?>
 
     <div id="checkoutModal" class="modal">
         <div class="modal-content">
@@ -88,7 +91,7 @@ require_once '../../include/auth_checker.php';
                 window.location.href = "../dashboard/dashboard.php";
             });
         }
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             let modal = document.getElementById("checkoutModal");
             if (event.target == modal) { closeModal(); }
         }
@@ -96,4 +99,5 @@ require_once '../../include/auth_checker.php';
     <script src="../../icons/sweetalert2.all.min.js"></script>
 
 </body>
+
 </html>

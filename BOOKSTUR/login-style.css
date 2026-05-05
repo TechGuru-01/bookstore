@@ -18,7 +18,8 @@ body {
 }
 
 .login-container {
-    width: 380px;
+    width: 90%;
+    max-width: 380px;
     background: var(--white);
     padding: 30px;
     border: 4px solid var(--gold); /* Gold border like cards */

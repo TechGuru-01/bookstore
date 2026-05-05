@@ -17,6 +17,7 @@ $current_table = $_GET['table'] ?? 'academic_tools';
     <link rel="stylesheet" href="../../component/adminUtils/adminUtils.css">
 
     <link rel="stylesheet" href="../../component/libraryContent/libraryContent.css">
+    <link rel="stylesheet" href="../../component/footerCap/footerCap.css">
     <link rel="stylesheet" href="../../component/footer/footer.css">
     <link rel="stylesheet" href="../../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
@@ -29,6 +30,7 @@ $current_table = $_GET['table'] ?? 'academic_tools';
    <?php include '../../component/homeFilter/homeFilter.php'?>
     <?php include '../../component/libraryContent/libraryContent.php'?>
     <?php include '../../component/adminUtils/adminUtils.php'?>
+    <?php include '../../component/footerCap/footerCap.php'?>
     <?php include '../../component/footer/footer.php'?>
     
 <script src="../../icons/sweetalert2.all.min.js"></script>

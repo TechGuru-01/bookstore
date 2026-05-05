@@ -104,7 +104,7 @@
 
 .carousel-dots {
   position: absolute;
-  bottom: 30px;
+  bottom: 45px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -137,16 +137,34 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .hero-carousel {
-    height: 350px;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Maintains proportional scaling */
+    min-height: unset;
   }
   .slide-content {
-    margin-top: 20px;
+    margin-top: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  .slide-content h1 {
+    font-size: clamp(1.2rem, 5vw, 2.2rem);
+    margin-bottom: 5px;
   }
   .carousel-btn {
-    padding: 10px;
-    font-size: 16px;
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .shop-now-btn {
+    margin-top: 10px;
+    padding: 8px 20px;
+    font-size: 0.8rem;
+    border-radius: 4px;
   }
 }
 

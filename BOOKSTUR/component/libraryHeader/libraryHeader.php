@@ -1,6 +1,7 @@
- <header class="page-header">
-       <div class="text-container" style="margin-bottom:60px;">
+<header class="page-header hero-books">
+    <div class="hero-glass-card">
         <h1>Academic Textbooks</h1>
         <p>Official course materials for San Sebastian College - Recoletos de Cavite</p>
-        </div>
-    </header>
+    </div>
+    <div class="hero-bridge-cap"></div>
+</header>

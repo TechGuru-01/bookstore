@@ -70,12 +70,14 @@ if (!$result) {
                     </p>
                     
                     <?php if ($isAdmin): ?>
-                        <button type="button" class="add-btn" 
+                        <button type="button" class="add-btn btn-edit" 
                                 onclick='openEditModal(<?php echo htmlspecialchars(json_encode($productData), ENT_QUOTES, "UTF-8"); ?>)'>
-                            Edit
+                            <span class="material-icons-outlined">edit</span>
+                            Edit Product
                         </button>
                     <?php else: ?>
-                        <button class="add-btn" onclick="addToCart(<?php echo $row['product_id']; ?>)">
+                        <button class="add-btn btn-cart" onclick="addToCart(<?php echo $row['product_id']; ?>)">
+                            <span class="material-icons-outlined">shopping_cart</span>
                             Add to Cart
                         </button>
                     <?php endif; ?>

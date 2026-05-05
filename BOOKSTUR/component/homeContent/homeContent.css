@@ -103,20 +103,76 @@
 
 @media (max-width: 768px) {
   .catalog-container {
-    display: block;
-    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets/large phones */
+    gap: 20px;
+    padding: 30px 15px;
   }
 
   .mobile-scroll-container {
-    display: flex !important;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 20px;
-    padding: 0 20px 20px;
+    display: contents !important;
   }
 
   .card {
-    flex: 0 0 280px;
-    scroll-snap-align: center;
+    height: auto;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .card-info {
+    padding: 15px;
+  }
+
+  .card-info h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .catalog-container {
+    grid-template-columns: repeat(2, 1fr); /* Compact 2-card grid */
+    gap: 12px;
+    padding: 20px 10px;
+  }
+
+  .card {
+    border-radius: 14px;
+  }
+
+  .card img {
+    height: 120px;
+  }
+
+  .card-info {
+    padding: 10px;
+  }
+
+  .card-info h3 {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+
+  /* Hide description on small phones to keep cards compact */
+  .card-info p {
+    display: none;
+  }
+
+  .tag {
+    font-size: 0.6rem;
+    padding: 3px 10px;
+    margin-bottom: 8px;
+  }
+
+  .see-more-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 0.75rem;
+    align-self: stretch; /* Fills width while respecting parent padding */
+    margin: 5px 2px 0 2px; /* Small buffer to prevent clipping */
+    border-radius: 10px;
   }
 }

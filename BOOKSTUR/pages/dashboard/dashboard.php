@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../component/footer/footer.css">
     <link rel="stylesheet" href="../../component/homeContent/homeContent.css">
     <link rel="stylesheet" href="../../component/homeFilter/homeFilter.css">
+    <link rel="stylesheet" href="../../component/footerCap/footerCap.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
     <title>SSC-R de Cavite Bookstore</title>
@@ -21,6 +22,7 @@
     <?php include '../../component/homeHeader/homeHeader.php'?>
     <?php include '../../component/homeFilter/homeFilter.php'?>
     <?php include '../../component/homeContent/homeContent.php'?>
+    <?php include '../../component/footerCap/footerCap.php'?>
     <?php include '../../component/adminUtils/adminUtils.php'?>
     <?php include '../../component/footer/footer.php'?>
     
