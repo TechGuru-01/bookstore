@@ -30,11 +30,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 if (password_verify($password, $row['password'])) {
                     $_SESSION['user_id'] = $row['id'];
                     $_SESSION['student_number'] = $row['student_number']; 
-                    $_SESSION['full_name'] = $row['full_name'] ?? 'User';
+                    $full_name = $row['full_name'] ?? 'User';
                     $_SESSION['course'] = $row['course'];
+                    $user_id = $row['id'];
+                    $update_last_seen = $conn->prepare("UPDATE users SET last_seen = NOW() WHERE id = ?");
+                    $update_last_seen->bind_param('i', $_SESSION['user_id']);
+                    $update_last_seen->execute();
 
                     $status = "success";
-                    $msg_text = "Login successful!";
+                    $msg_text = "Enjoy your shopping!";
                 } else {
                     $status = "error";
                     $msg_text = "Invalid student number or password.";
@@ -52,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo json_encode([
         'status' => $status,
         'msg' => $msg_text,
-        'full_name' => $full_name
+        'full_name' => $full_name ?? ''
     ]);
     exit; 
 }

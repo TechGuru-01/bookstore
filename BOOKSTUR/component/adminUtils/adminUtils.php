@@ -14,21 +14,6 @@ $isAdmin = ($current_position === 'ADMIN' || $current_position === 'SUPER ADMIN'
             Add to Library
         </button>
         
-        <button class="ubuntu-item" onclick="openUniformModal()">
-            <span class="material-symbols-outlined">apparel</span>
-            Add to Uniform
-        </button>
-
-        <button class="ubuntu-item" onclick="openApparelModal()">
-            <span class="material-symbols-outlined">apparel</span>
-            Add to Apperel
-        </button>
-
-        <button class="ubuntu-item" onclick="openOtherModal()">
-            <span class="material-symbols-outlined">ink_pen</span>
-            Add to Others
-        </button>
-        
         <button class="ubuntu-item" onclick="confirmLogout()">
             <span class="material-symbols-rounded">logout</span>
             Logout

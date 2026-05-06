@@ -3,7 +3,6 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-
 if (!isset($_SESSION['user_id'])) {
     header("Location: /BOOKSTUR/index.php");
     exit(); 
@@ -15,6 +14,8 @@ if (isset($conn)) {
     if ($sync_query && $sync_row = $sync_query->fetch_assoc()) {
         $_SESSION['profile_pic'] = $sync_row['profile_pic'];
     }
+
+    $conn->query("UPDATE users SET last_seen = NOW() WHERE id = $user_id");
 }
 
 $timeout = 3600; 
@@ -25,7 +26,6 @@ if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity'] > 
     exit();
 }
 $_SESSION['last_activity'] = time(); 
-
 
 $user_role = strtolower($_SESSION['course'] ?? 'Student');
 ?>

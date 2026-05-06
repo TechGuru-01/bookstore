@@ -1,4 +1,4 @@
- <footer class="main-footer" id="footer">
+<footer class="main-footer" id="footer">
     <div class="footer-content">
         <div class="footer-section about">
             <h2 class="footer-logo">SSC-R <span>de Cavite</span></h2>
@@ -12,10 +12,10 @@
         <div class="footer-section links">
             <h3>Quick Links</h3>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="books.html">Books</a></li>
-                <li><a href="uniform.html">Uniforms</a></li>
-                <li><a href="others.html">Other Items</a></li>
+                <li><a href="/BOOKSTUR/pages/dashboard/dashboard.php">Home</a></li>
+                <li><a href="/BOOKSTUR/pages/library/library.php">Books</a></li>
+                <li><a href="/BOOKSTUR/pages/uniform/uniform.php">Uniforms</a></li>
+                <li><a href="/BOOKSTUR/pages/apparel/apparel.php">Apparel</a></li>
             </ul>
         </div>
 
